@@ -5,8 +5,8 @@ module.exports = {
     umd: {
       global: 'ReactClippy',
       externals: {
-        react: 'React'
-      }
-    }
-  }
+        react: 'React',
+      },
+    },
+  },
 }

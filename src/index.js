@@ -1,9 +1,23 @@
-import React, {Component} from 'react'
+import React, { PureComponent } from 'react'
 
-export default class extends Component {
+import Agent from './agents/clippy/agent'
+import map from './agents/clippy/map.png'
+
+import Animator from './Animator'
+
+export default class Clippy extends PureComponent {
   render() {
-    return <div>
-      <h2>Welcome to React components</h2>
-    </div>
+    const { animation, repeat, ...rest } = this.props
+    const { framesize: [width, height], animations } = Agent
+    return (
+      <Animator
+        width={width}
+        height={height}
+        spriteUrl={map}
+        animations={animations}
+        animation={animation}
+        repeat={repeat}
+      />
+    )
   }
 }
