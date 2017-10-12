@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react'
 
 import Agent from './agents/clippy/agent'
-import map from './agents/clippy/map.png'
+import map from '../assets/clippy.map.png'
 
 import Animator from './Animator'
 
